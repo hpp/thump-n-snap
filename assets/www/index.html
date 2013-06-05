@@ -1,126 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Acceleration Example</title>
-
+<head>
+    <link rel="stylesheet" type="text/css" href="css/jo.css">
     <script type="text/javascript" charset="utf-8" src="cordova-2.7.0.js"></script>
-    <script type="text/javascript" charset="utf-8">
+    <script type="text/javascript" charset="utf-8" src="js/thumpNsnapMechanics.js"></script>
+</head>
+<body>
 
-    // The watch id references the current `watchAcceleration`
-    var watchID = null;
-    // media variables
-    var thumpyMedia1 = null;
-    var thumpyMedia2 = null;
-    var snappyMedia1 = null;
-    var snappyMedia2 = null;
-    
-    
-    
-    
-    var resetBeat = true;
-    var thumpyURI = "file:///android_asset/www/808bd2.mp3";
-    var snappyURI = "file:///android_asset/www/chut_sd.mp3";
+    <!-- any static page content goes here -->
 
+    <!-- load jo library -->
+    <script src="js/jo_min.js"></script>
 
-    // Wait for Cordova to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
+    <!-- any application JavaScript files go here -->
+    <script src="js/sample7.js"></script>
 
-    // Cordova is ready
-    //
-    function onDeviceReady() {
-    	//alert("made it here!");
-    	thumpyMedia1 = new Media(thumpyURI, onMediaSuccess, onMediaError);
-    	thumpyMedia2 = new Media(thumpyURI, onMediaSuccess, onMediaError);
-    	snappyMedia1 = new Media(snappyURI, onMediaSuccess, onMediaError);
-    	snappyMedia2 = new Media(snappyURI, onMediaSuccess, onMediaError);
-        startWatch();
-    }
+</body>
 
-    // Start watching the acceleration
-    //
-    function startWatch() {
-		//alert("made it here too!");
-        // Update acceleration every 3 seconds
-        var options = { frequency: 30 };
-
-        watchID = navigator.accelerometer.watchAcceleration(onAccelSuccess, onAccelError, options);
-    }
-
-    // Stop watching the acceleration
-    //
-    function stopWatch() {
-        if (watchID) {
-            navigator.accelerometer.clearWatch(watchID);
-            watchID = null;
-        }
-    }
-
-    // onSuccess: Get a snapshot of the current acceleration
-    //
-    function onAccelSuccess(acceleration) {
-     	if (acceleration.x<0){
-     		resetBeat = true;
-     	} else {
-     		if (resetBeat==true){
-     			if (acceleration.z<0){
-     				thumpyMedia1.getCurrentPosition(onThumpyUpdate);
-     			} else {
-     				snappyMedia1.getCurrentPosition(onSnappyUpdate);
-     			}
-     			resetBeat=false;
-     		}
-     	}  	
-    }
-    
-    function onThumpyUpdate(pos){
-    	//console.log("thump1=" + pos + " thump2=" + media1 + " thump2=" + media2);
-    	if (pos>0 && pos<thumpyMedia1.getDuration()){
-    		thumpyMedia2.play();
-    		//console.log("thump 2" + pos + " Duration=" + media1.getDuration());
-    	} else {
-    		thumpyMedia1.play();
-    		//console.log("thump 1" + pos + " Duration=" + media1.getDuration());
-    	}
-    }
-    
-    function onSnappyUpdate(pos){
-    	//console.log("thump1=" + pos + " thump2=" + media1 + " thump2=" + media2);
-    	if (pos>0 && pos<snappyMedia1.getDuration()){
-    		snappyMedia2.play();
-    		//console.log("thump 2" + pos + " Duration=" + media1.getDuration());
-    	} else {
-    		snappyMedia1.play();
-    		//console.log("thump 1" + pos + " Duration=" + media1.getDuration());
-    	}
-    }
-
-    // onError: Failed to get the acceleration
-    //
-    function onAccelError() {
-        alert('onError!');
-    }
-    
-    
-    // onSuccess Callback
-    //
-    function onMediaSuccess() {
-        console.log("playAudio():Audio Success");
-    }
-
-    
-    // onError Callback 
-    //
-    function onMediaError(error) {
-        alert('code: '    + error.code    + '\n' + 
-              'message: ' + error.message + '\n');
-    }
-
-
-
-    </script>
-  </head>
-  <body>
-    <div id="accelerometer">Waiting for accelerometer...</div>
-  </body>
 </html>
