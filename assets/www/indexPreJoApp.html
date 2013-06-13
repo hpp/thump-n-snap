@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Thump N Snap</title>
 
-	<link type='text/css' rel='stylesheet' href='css/style.css' />  
+    <link type='text/css' rel='stylesheet' href='css/style.css'/>
     <script type="text/javascript" charset="utf-8" src="cordova-2.7.0.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/thumpNsnapMechanics.js"></script>
-  </head>
-  <body>
-  	<script type="text/javascript">
+</head>
+<body>
+<script type="text/javascript">
   		watching = true;
 		Image1= new Image(150,203)
 		Image1.src = "snappy_ready.png"
 		Image1.src = "snappy_snap.png"
 		Image1.src = "thumpy_ready.png"
 		Image1.src = "thumpy_stomp.png"
-	</script>
-	
-	<div id="title_bar" style="float: center; height: 32px;">
-		<ul id="menu">
-			<li class="Title">Thump N Snap</li>
-	
-			<li style="float: right;"><a style="width: 80px;" href="#">Menu<!--<img href="menu_icon.jpg" width="32" height="32"/>--></a>
-				<ul>
-					<li><a href="settings.html">Settings</a></li>
-					<li><a href="http://www.mypromotank.com/hp">More</a></li>
-					<li><a onclick="onExit()">Exit</a></li>
-				</ul>
-			</li>
-		</ul>
-	</div>
-	
-	<div style="float: center; width: 300px;">
-	    <div id="thumpy" style="float: left; width: 150px;">
-	    	<img id="thumpy_img" src="file:///android_asset/www/thumpy.png" width="150" height="203"/>
-	    </div>
-	    
-	    <div id="snappy" style="float: right; width: 150px;">
-	    	<img id="snappy_img" src="file:///android_asset/www/snappy.png" width="150" height="203"/>
-    	</div>
+</script>
+
+<div id="title_bar" style="float: center; height: 32px;">
+    <ul id="menu">
+        <li class="Title">Thump N Snap</li>
+
+        <li style="float: right;"><a style="width: 80px;" href="#">Menu
+            <!--<img href="menu_icon.jpg" width="32" height="32"/>--></a>
+            <ul>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="http://www.mypromotank.com/hp">More</a></li>
+                <li><a onclick="onExit()">Exit</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div style="float: center; width: 300px;">
+    <div id="thumpy" style="float: left; width: 150px;">
+        <img id="thumpy_img" src="file:///android_asset/www/thumpy.png" width="150" height="203"/>
     </div>
-  </body>
+
+    <div id="snappy" style="float: right; width: 150px;">
+        <img id="snappy_img" src="file:///android_asset/www/snappy.png" width="150" height="203"/>
+    </div>
+</div>
+</body>
 </html>

@@ -29,41 +29,29 @@ var snappyURI = "file:///android_asset/www/chut_sd.mp3";
 
 // Wait for Cordova to load
 //
-document.addEventListener("deviceready", onDeviceReady, false);
-document.addEventListener("pause", stopWatch, false);
-document.addEventListener("resume", startWatch, false);
+//document.addEventListener("deviceready", onDeviceReady, false);
 
 // Cordova is ready
 //
-function onDeviceReady() {
-	//storage = window.localStorage;
-	tempo = Number(window.localStorage.getItem("tempo"));
-	autoReset = window.localStorage.getItem("autoReset");
-	if(!autoReset){
-		autoReset = false;
-		localStorage.setItem("autoReset",autoReset);
-	}
-	if(!tempo){
-		tempo=Math.floor(120*1000/32/60);
-		localStorage.setItem("tempo", tempo);
-	}
-	//console.log("autoReset="+autoReset);
-	
-	//alert("made it to device ready");
-	thumpyMedia1 = new Media(thumpyURI, onMediaSuccess, onMediaError);
-	thumpyMedia2 = new Media(thumpyURI, onMediaSuccess, onMediaError);
-	snappyMedia1 = new Media(snappyURI, onMediaSuccess, onMediaError);
-	snappyMedia2 = new Media(snappyURI, onMediaSuccess, onMediaError);
-	console.log("watching="+watching);
-    if (watching) {startWatch();}
-    var db = window.openDatabase("thumpy_db", "1.0", "Thumpy Sounds", 1000000);
-    var db = window.openDatabase("snappy_db", "1.0", "Snappy Sounds", 1000000);
+//storage = window.localStorage;
+tempo = Number(window.localStorage.getItem("tempo"));
+autoReset = window.localStorage.getItem("autoReset");
+if(!autoReset){
+	autoReset = false;
+	localStorage.setItem("autoReset",autoReset);
 }
+if(!tempo){
+	tempo=Math.floor(120*1000/32/60);
+	localStorage.setItem("tempo", tempo);
+}
+console.log("autoReset="+autoReset);
+
+//alert("made it here!");
 
 // Start watching the acceleration
 //
 function startWatch() {
-	//alert("made it to accel watch started!");
+	//alert("made it here too!");
     // Update acceleration every 3 seconds
 	//var tempo =  window.localStorage.getItem("tempo");
 	console.log("tempo="+tempo+"mspb")
