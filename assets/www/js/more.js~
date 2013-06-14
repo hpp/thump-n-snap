@@ -1,0 +1,23 @@
+joCache.set("more", function() {
+	
+	stopWatch();
+	
+	var moreLink = joFIle("http://www.mypromotank.com/hpp",startWatch);
+	
+	var card = new joCard([
+		new joTitle("More"),
+		moreLink
+	]);
+	
+	return card;
+});
+
+joCache.set("about", function() {
+	
+	stopWatch();
+	
+	document.location = "http://www.mypromotank.com/hpp";
+	
+	return card;
+});
+
