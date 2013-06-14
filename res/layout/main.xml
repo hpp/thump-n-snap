@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -9,5 +10,17 @@
     android:layout_height="wrap_content"
     android:text="Hello World, ThumpNSnap"
     />
+=======
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World, sample7"
+            />
+>>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
 </LinearLayout>
 

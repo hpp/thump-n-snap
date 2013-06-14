@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/thumpnsnap.iml" filepath="$PROJECT_DIR$/thumpnsnap.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/thumpy.iml" filepath="$PROJECT_DIR$/thumpy.iml" />
+>>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
     </modules>
   </component>
 </project>

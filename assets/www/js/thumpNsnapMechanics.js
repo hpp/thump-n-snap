@@ -2,6 +2,12 @@
  * This code is provided by Joe M Walter. It is for use with Thump N Snap.
  * 
  */
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
 var pos_left = false, pos_back = false;
 var watching = false;
 var autoReset = null;
@@ -11,6 +17,10 @@ var d = new Date();
 var n = d.getTime();
 var set = false;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
 // The watch id references the current `watchAcceleration`
 var watchID = null;
 // media variables

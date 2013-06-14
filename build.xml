@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <project name="ThumpNSnap" default="help">
+=======
+<project name="sample7" default="help">
+>>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
 
     <!-- The local.properties file is created and updated by the 'android' tool.
          It contains the path to the SDK. It should *NOT* be checked into
          Version Control Systems. -->
+<<<<<<< HEAD
     <property file="local.properties" />
+=======
+    <property file="local.properties"/>
+>>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
 
     <!-- The ant.properties file can be created by you. It is only edited by the
          'android' tool to add properties to it.
@@ -26,15 +34,25 @@
          application and should be checked into Version Control Systems.
 
          -->
+<<<<<<< HEAD
     <property file="ant.properties" />
+=======
+    <property file="ant.properties"/>
+>>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
 
     <!-- if sdk.dir was not set from one of the property file, then
          get it from the ANDROID_HOME env var.
          This must be done before we load project.properties since
          the proguard config can use sdk.dir -->
+<<<<<<< HEAD
     <property environment="env" />
     <condition property="sdk.dir" value="${env.ANDROID_HOME}">
         <isset property="env.ANDROID_HOME" />
+=======
+    <property environment="env"/>
+    <condition property="sdk.dir" value="${env.ANDROID_HOME}">
+        <isset property="env.ANDROID_HOME"/>
+>>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
     </condition>
 
     <!-- The project.properties file is created and updated by the 'android'
@@ -46,13 +64,22 @@
 
          This file is an integral part of the build system for your
          application and should be checked into Version Control Systems. -->
+<<<<<<< HEAD
     <loadproperties srcFile="project.properties" />
+=======
+    <loadproperties srcFile="project.properties"/>
+>>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
 
     <!-- quick check on sdk.dir -->
     <fail
             message="sdk.dir is missing. Make sure to generate local.properties using 'android update project' or to inject it through the ANDROID_HOME environment variable."
             unless="sdk.dir"
+<<<<<<< HEAD
     />
+=======
+            />
+
+>>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
 
     <!--
         Import per project custom build rules if present at the root of the project.
@@ -66,7 +93,11 @@
             -post-build
             -pre-clean
     -->
+<<<<<<< HEAD
     <import file="custom_rules.xml" optional="true" />
+=======
+    <import file="custom_rules.xml" optional="true"/>
+>>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
 
     <!-- Import the actual build file.
 
@@ -87,6 +118,10 @@
          in order to avoid having your file be overridden by tools such as "android update project"
     -->
     <!-- version-tag: 1 -->
+<<<<<<< HEAD
     <import file="${sdk.dir}/tools/ant/build.xml" />
+=======
+    <import file="${sdk.dir}/tools/ant/build.xml"/>
+>>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
 
 </project>

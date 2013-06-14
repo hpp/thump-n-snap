@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 #!/bin/bash
+=======
+>>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
 # distributed with this work for additional information
@@ -16,8 +19,17 @@
 # specific language governing permissions and limitations
 # under the License.
 
+<<<<<<< HEAD
+=======
+#!/bin/bash
+
+>>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
 set -e
 
 CORDOVA_PATH=$( cd "$( dirname "$0" )/.." && pwd )
 
+<<<<<<< HEAD
 bash "$CORDOVA_PATH"/cordova/lib/cordova log "$@"
+=======
+bash "$CORDOVA_PATH"/cordova/cordova log
+>>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
