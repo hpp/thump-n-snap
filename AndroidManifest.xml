@@ -20,6 +20,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:windowSoftInputMode="adjustPan"
       package="com.harmonicprocesses.thumpnsnap" android:versionName="1.0" android:versionCode="1" android:hardwareAccelerated="true">
     <supports-screens
@@ -74,6 +75,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:windowSoftInputMode="adjustPan"
       package="com.hpp.sample7" android:versionName="1.0" android:versionCode="1" android:hardwareAccelerated="true">
 >>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
+=======
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:windowSoftInputMode="adjustPan"
+      package="com.hpp.sample7" android:versionName="1.0" android:versionCode="1" android:hardwareAccelerated="true">
+>>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
     <supports-screens
         android:largeScreens="true"
         android:normalScreens="true"
@@ -111,9 +116,14 @@
             <intent-filter>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
 >>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
+=======
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+>>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
 =======
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -129,12 +139,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="17"/>
 =======
     <uses-sdk
             android:minSdkVersion="7"
             android:targetSdkVersion="17"/>
 >>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
+=======
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="17"/>
+>>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
 =======
     <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="17"/>
 >>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics

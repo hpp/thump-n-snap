@@ -3,6 +3,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
 =======
 >>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
 =======
@@ -14,6 +17,7 @@
 <TextView
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     android:text="Hello World, ThumpNSnap"
@@ -30,6 +34,10 @@
             android:text="Hello World, sample7"
             />
 >>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
+=======
+    android:text="Hello World, sample7"
+    />
+>>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
 =======
     android:text="Hello World, sample7"
     />
