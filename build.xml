@@ -10,10 +10,14 @@
          Version Control Systems. -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property file="local.properties" />
 =======
     <property file="local.properties"/>
 >>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
+=======
+    <property file="local.properties" />
+>>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
 =======
     <property file="local.properties" />
 >>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
@@ -40,10 +44,14 @@
          -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property file="ant.properties" />
 =======
     <property file="ant.properties"/>
 >>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
+=======
+    <property file="ant.properties" />
+>>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
 =======
     <property file="ant.properties" />
 >>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
@@ -54,6 +62,7 @@
          the proguard config can use sdk.dir -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property environment="env" />
     <condition property="sdk.dir" value="${env.ANDROID_HOME}">
         <isset property="env.ANDROID_HOME" />
@@ -62,6 +71,11 @@
     <condition property="sdk.dir" value="${env.ANDROID_HOME}">
         <isset property="env.ANDROID_HOME"/>
 >>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
+=======
+    <property environment="env" />
+    <condition property="sdk.dir" value="${env.ANDROID_HOME}">
+        <isset property="env.ANDROID_HOME" />
+>>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
 =======
     <property environment="env" />
     <condition property="sdk.dir" value="${env.ANDROID_HOME}">
@@ -80,10 +94,14 @@
          application and should be checked into Version Control Systems. -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <loadproperties srcFile="project.properties" />
 =======
     <loadproperties srcFile="project.properties"/>
 >>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
+=======
+    <loadproperties srcFile="project.properties" />
+>>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
 =======
     <loadproperties srcFile="project.properties" />
 >>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
@@ -94,11 +112,15 @@
             unless="sdk.dir"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     />
 =======
             />
 
 >>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
+=======
+    />
+>>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
 =======
     />
 >>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
@@ -117,10 +139,14 @@
     -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <import file="custom_rules.xml" optional="true" />
 =======
     <import file="custom_rules.xml" optional="true"/>
 >>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
+=======
+    <import file="custom_rules.xml" optional="true" />
+>>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
 =======
     <import file="custom_rules.xml" optional="true" />
 >>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
@@ -146,10 +172,14 @@
     <!-- version-tag: 1 -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <import file="${sdk.dir}/tools/ant/build.xml" />
 =======
     <import file="${sdk.dir}/tools/ant/build.xml"/>
 >>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
+=======
+    <import file="${sdk.dir}/tools/ant/build.xml" />
+>>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
 =======
     <import file="${sdk.dir}/tools/ant/build.xml" />
 >>>>>>> parent of 8a52b27... Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics
