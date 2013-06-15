@@ -20,13 +20,13 @@
 package com.hpp.sample7;
 
 import android.os.Bundle;
+import org.apache.cordova.*;
 
-import org.apache.cordova.Config;
-import org.apache.cordova.DroidGap;
-
-public class sample7 extends DroidGap {
+public class sample7 extends DroidGap
+{
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         // Set by <content src="index.html" /> in config.xml
         super.loadUrl(Config.getStartUrl());

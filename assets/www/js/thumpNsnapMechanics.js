@@ -36,8 +36,6 @@ var snappyURI = "file:///android_asset/www/chut_sd.mp3";
 // Wait for Cordova to load
 //
 document.addEventListener("deviceready", onDeviceReady, false);
-document.addEventListener("pause", stopWatch, false);
-document.addEventListener("resume", startWatch, false);
 
 // Cordova is ready
 //
@@ -53,9 +51,9 @@ function onDeviceReady() {
 		tempo=Math.floor(120*1000/32/60);
 		localStorage.setItem("tempo", tempo);
 	}
-	//console.log("autoReset="+autoReset);
+	console.log("autoReset="+autoReset);
 	
-	//alert("made it to device ready");
+	//alert("made it here!");
 	thumpyMedia1 = new Media(thumpyURI, onMediaSuccess, onMediaError);
 	thumpyMedia2 = new Media(thumpyURI, onMediaSuccess, onMediaError);
 	snappyMedia1 = new Media(snappyURI, onMediaSuccess, onMediaError);
@@ -69,7 +67,7 @@ function onDeviceReady() {
 // Start watching the acceleration
 //
 function startWatch() {
-	//alert("made it to accel watch started!");
+	//alert("made it here too!");
     // Update acceleration every 3 seconds
 	//var tempo =  window.localStorage.getItem("tempo");
 	console.log("tempo="+tempo+"mspb")

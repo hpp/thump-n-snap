@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Thump N Snap - Settings</title>
 
-    <link type='text/css' rel='stylesheet' href='css/style.css'/>
+	<link type='text/css' rel='stylesheet' href='css/style.css' />  
     <script type="text/javascript" charset="utf-8" src="cordova-2.7.0.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/thumpNsnapMechanics.js"></script>
     <script type="text/javascript">
@@ -13,40 +13,34 @@
 	  		document.getElementById("tempo").innerHTML = "tempo = " + 
 	  		Math.floor((60000/(tempo*32)))+"bpm";
     	}
+  	</script>
+  </head>
+  <body onload="loadTempo()">
 
-    </script>
-</head>
-<body onload="loadTempo()">
-
-<div id="title_bar" style="float: center; height: 32px;">
-    <ul id="menu">
-        <li class="Title">Thump N Snap - Settings</li>
-
-        <li style="float: right;"><a href="#">Menu
-            <!--<img href="menu_icon.jpg" width="32" height="32"/>--></a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="http://www.mypromotank.com/hp">More</a></li>
-                <li><a onclick="onExit()">Exit</a></li>
-            </ul>
-        </li>
-    </ul>
-</div>
-<br/>
-<br/>
-<input type="checkbox" onchange="window.localStorage.setItem('autoReset', checked)"
-       checked="checkAutoReset()">Auto Reset
-<br/>
-<br/>
-<button id="tap_tempo" onclick="tap()">Tap Tempo</button>
-<p id="tempo"></p>
-
-<p>Thump Sound File</p>
-<input type="file" value="file:///android_asset/www/808bd2.mp3" name="thump_sound"><br/>
-
-<p>Snap Sound File</p>
-<input type="file" name="snap_sound"><br/>
-<button id="Ok" onclick="load_new_sounds()">Back</button>
-<br/>
-
+  	<div id="title_bar" style="float: center; height: 32px;">
+		<ul  id="menu">
+			<li class="Title">Thump N Snap - Settings</li>
+	
+			<li style="float: right;"><a href="#">Menu<!--<img href="menu_icon.jpg" width="32" height="32"/>--></a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="http://www.mypromotank.com/hp">More</a></li>
+					<li><a onclick="onExit()">Exit</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<br />
+	<br />
+	<input type="checkbox" onchange="window.localStorage.setItem('autoReset', checked)" 
+	checked="checkAutoReset()">Auto Reset
+	<br />
+	<br />
+	<button id="tap_tempo" onclick="tap()">Tap Tempo</button><p id="tempo"></p>
+	<p>Thump Sound File</p>
+	<input type="file" value="file:///android_asset/www/808bd2.mp3" name="thump_sound"><br />
+	<p>Snap Sound File</p>
+	<input type="file" name="snap_sound"><br />
+	<button id="Ok" onclick="load_new_sounds()">Back</button><br />
+	
 </html>
