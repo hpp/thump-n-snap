@@ -934,6 +934,7 @@ jopopup.show {
   -o-transform: scale(1);
   -ms-transform: scale(1);
   opacity: 1;
+  float: center; 
 }
 jopopup > joscroller {
   width: 100%;

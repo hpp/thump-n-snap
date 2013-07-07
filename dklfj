@@ -1,0 +1,7 @@
+commit 38a8847d1a24c5e14eedaae542ec6befdbab745f
+Author: jigglypuffdaddy <jigglypuffdaddy@devpad4.(none)>
+Date:   Sat Jun 15 11:29:07 2013 -0600
+
+    Revert "Revert "Everything working with JoApp, good times, next database for the audio files and updated thumpy and snappy pics"
+    
+    This reverts commit 85521da34559cf6587c9bb90177426c2081ff7bd.

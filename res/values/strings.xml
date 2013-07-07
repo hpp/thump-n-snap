@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
-    <string name="app_name">ThumpNSnap</string>
-=======
-    <string name="app_name">sample7</string>
->>>>>>> 8a52b2783c5e7ce1a0bbdd97b2ee0171f593c862
+    <string name="app_name">thumpnsnap</string>
 </resources>
